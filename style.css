@@ -1,29 +1,258 @@
+/* barra asterisco, asterisco barra: tudo o que estiver dentro será um comentário */
 * {
     margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-}
-.cabecalho {
-    background-color: #7C71FF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-}
-li {
-    display: inline-block;
-    background-color: #FFFFFF;
-    padding: 10px;
-    border-radius: 50px;
-    margin-right: 10px;
-}
-a {
-    text-decoration: none;
-}
-.info-usuario {
-    color: #FFFFFF;
-    margin-left: 30px;
-}
-.nome {
-    text-transform: uppercase;
-}
+    padding: 0; 
+    font-family: 'Inter', sans-serif; /*google fonts*/
+ }
+ 
+ .cabecalho {
+     background-color: #7C71FF;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 100px;
+ }
+ 
+ .info-usuario {
+     color: #FFFFFF;
+     margin-left: 30px;
+ }
+ 
+ .info-usuario small {
+     font-size: 14px;
+ }
+ 
+ .nome {
+     text-transform: uppercase;
+     font-size: 22px;
+     font-weight: 700;
+ }
+ 
+ .navegacao-menu ul {
+     display: flex;
+     gap: 20px;
+     margin-right: 53px;
+ }
+ 
+ .navegacao-menu li {
+     list-style: none;
+     padding: 8px 14px;
+     border-radius: 25px;
+     background-color: #D9D9D9;
+     font-size: 16px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .navegacao-menu li a {
+     text-decoration: none;
+ }
+ 
+ .navegacao-menu .icone-inicio {
+     background-color: #200065;
+ }
+ 
+ .navegacao-menu .icone-inicio a {
+     color: #D9D9D9;
+     text-transform: uppercase;
+     font-weight: 700;
+ }
+ 
+ #produtos {
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #D7E2FF;
+     height: 532px;
+ }
+ 
+ .nova-colecao {
+     color: #200065;
+     text-align: center;
+     padding-top: 29px;
+ }
+ 
+ h1 {
+     font-family: Abril Fatface;
+     font-size: 40px;
+     font-weight: 400;
+ }
+ 
+ h2 {
+     font-size:36px;
+     font-weight: 400;
+ }
+ 
+ .lista-imagens {
+     margin: 27px auto 35px;
+     display: flex;
+     justify-content: center;
+     gap: 70px;
+ }
+ 
+ .lista-imagens li {
+     list-style: none;
+     width: 284px;
+     height: 284px;
+     text-align: center;
+ }
+ 
+ .lista-imagens img {
+     height: 100%;
+     width: 100%;
+ }
+ 
+ .linkcea {
+     font-size: 18px;
+     font-weight: 400;
+     text-align: center;
+     padding-bottom: 35px;
+ }
+ 
+ .linkcea a {
+     color: #0075FF;
+ }
+ 
+ #clientes {
+     background-color: #AEBFEB;
+     height: 616px;
+ }
+ 
+ .avaliacoes {
+     display: flex;
+     justify-content: center;
+     gap: 26px;
+ }
+ 
+ article {
+     max-height: 427px;
+     max-width: 427px;
+     background-color: #D4E0FF;
+     margin-top: 34px;
+     margin-bottom: 75px;
+ }
+ 
+ h3 {
+     color: #200065;
+     text-align: center;
+     font-family: Abril Fatface;
+     font-size: 32px;
+     font-weight: 400;
+     padding-top: 38px;
+ }
+ 
+ h4 {
+     font-family: Abril Fatface;
+     font-size: 32px;
+     font-weight: 400;
+     padding-top: 38px;
+     padding-left: 48px;
+ }
+ 
+ h5 {
+     font-size: 18px;
+     padding-left: 48px;
+     font-style: italic;
+     font-weight: 400;
+ }
+ 
+ .paragrafo-clientes {
+     font-size: 24px;
+     font-weight: 400;
+     padding-top: 92px;
+     padding-left: 48px;
+     padding-right: 26px;
+     padding-bottom: 100px;
+ }
+ 
+ #pedidos {
+     background-color: #D7E2FF;
+     height: 441px;
+ }
+ 
+ table {
+     border-collapse: collapse;
+     width: 1250px;
+     height: 250px;
+     text-align: left;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 39px;
+     margin-bottom: 66px;
+     font-size: 18px;
+ }
+ 
+ thead {
+     background-color: #7C71FF;
+ }
+ 
+ tbody {
+     background-color: #FFFFFF;
+ }
+ 
+ th, td {
+     padding: 10px;
+     text-align: left;
+     border: 1px solid #000;
+     min-width: 230px; 
+ }
+ 
+ #faleconosco {
+     background-color: #AEBFEB;
+     height: 685px;
+ }
+ 
+ footer {
+     background-color: #3F3F3F;
+     height: 108px;
+ }
+ 
+ form {
+     margin: auto;
+     max-width: 1141px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 30px;
+ }
+ 
+ form div {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ form label {
+     font-size: 14px;
+     line-height: 28px;
+     margin-left: 3px;
+ }
+ 
+ form input, textarea {
+     padding: 10px 15px;
+     border-radius: 10px;
+     border: 1px solid #AAAAAD;
+ }
+ 
+ .enviar {
+     display: flex;
+     align-items: center;
+     margin-top: 19px;
+     margin-bottom: 30px;
+ }
+ 
+ button {
+     font-size: 22px;
+     width: 270px;
+     height: 48px;
+     border-radius: 10px;
+     color: #FFFFFF;
+     background-color:#313131   
+ }
+ 
+ .rodape {
+     color: #FFFFFF;
+     font-size: 20px;
+     padding-top: 45px;
+     padding-left: 30px;
+ }
